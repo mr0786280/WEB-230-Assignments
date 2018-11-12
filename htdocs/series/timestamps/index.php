@@ -13,7 +13,7 @@ echo '</br>';
 $time = time();
 // 02. Explain what the following line of code is doing and how.
 $actual_time = date('D M Y @ H:i:s', $time);
-//A: This code displays the current date and time.
+//A: This code displays the formatted current date and time. 
 
 echo 'The current date and time is '.$actual_time;
 
