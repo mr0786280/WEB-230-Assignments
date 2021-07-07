@@ -22,7 +22,8 @@ if (isset($_POST['text'])&&isset($_POST['searchfor'])&&isset($_POST['replacewith
 
     while($strpos = strpos($text, $search, $offset)) {
   // 05.Explain why we change the value of the $offset variable here.
-  // A5: This calcutes the amount of spaces of the data input, and the length. (I think)
+  // A5: This calcutes the amount of spaces of the data input, and the length. (I think) 
+      // which allows the length of the current $offset to establish where it will begin searching in the string. (https://www.w3schools.com/php/func_string_strpos.asp)
       $offset = $strpos + $search_length;
 
 // 06.Explain what we are doing here to the $text variable.
